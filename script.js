@@ -9,26 +9,27 @@ skaicius4 = 4;
 suma = skaicius1 + skaicius2 + skaicius3 + skaicius4;
 sandauga = skaicius1 * skaicius2 * skaicius3 * skaicius4;
 
-var temp = skaicius1, skaicius2
-skaicius1 = 2
-skaicius2 = 1
+var temp;
+temp = skaicius1
+skaicius1 = skaicius2
+skaicius2 = temp
 
 var skaicius3, skaicius4
-skaicius3 = 4
-skaicius4 = 3
+skaicius3 = skaicius3 ^ skaicius4
+skaicius4 = skaicius3 ^ skaicius4
+skaicius3 = skaicius3 ^ skaicius4
 
 var maxSkaicius;
 maxSkaicius = Number.MAX_VALUE
 
-alert("skaicius1 = 2")
-alert("skaicius2 = 1")
-alert("skaicius3 = 4")
-alert("skaicius4 = 3")
+alert(skaicius1, "=" ,skaicius2);
+alert([skaicius3, skaicius4] = [skaicius4, skaicius3]);
 
-console.log(skaicius1)
-console.log(skaicius2)
-console.log(skaicius3)
-console.log(skaicius4)
-console.log(suma)
-console.log(sandauga)
-console.log(maxSkaicius)
+
+console.log("skaicius1", skaicius1)
+console.log("skaicius2", skaicius2)
+console.log("skaicius3", skaicius3)
+console.log("skaicius4", skaicius4)
+console.log("suma", suma) 
+console.log("sandauga", sandauga)
+console.log("maxSkaicius", maxSkaicius)
