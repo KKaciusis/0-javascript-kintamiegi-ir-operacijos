@@ -22,7 +22,7 @@ skaicius3 = skaicius3 ^ skaicius4
 var maxSkaicius;
 maxSkaicius = Number.MAX_VALUE
 
-alert(skaicius1, "=" ,skaicius2);
+alert([skaicius1, skaicius2] = [skaicius2, skaicius1]);
 alert([skaicius3, skaicius4] = [skaicius4, skaicius3]);
 
 
